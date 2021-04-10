@@ -25,25 +25,25 @@ Suporta as operações soma, subtração, multiplicação e divisão
 
 */
 
-calcular (num1: number, num2: number, operacao: string): number {
-  let resultado: number; // armazera o resultado da operacao
+  calcular (num1: number, num2: number, operacao: string): number {
+    let resultado: number; // armazera o resultado da operacao
 
-  switch (operacao){
-    case CalculadoraService.SOMA:
-      resultado = num1 + num2;
-      break;
-    case CalculadoraService.SUBTRACAO:
-      resultado = num1 - num2;
-      break;
-    case CalculadoraService.DIVISAO:
-      resultado = num1/+ num2;
-      break;
-    case CalculadoraService.MULTIPLICACAO:
-      resultado = num1 * num2;
-      break;
-    default:
-      resultado = 0;
+    switch (operacao){
+      case CalculadoraService.SOMA:
+        resultado = num1 + num2;
+        break;
+      case CalculadoraService.SUBTRACAO:
+        resultado = num1 - num2;
+        break;
+      case CalculadoraService.DIVISAO:
+        resultado = num1 / num2;
+        break;
+      case CalculadoraService.MULTIPLICACAO:
+        resultado = num1 * num2;
+        break;
+      default:
+        resultado = 0;
+    }
+    return resultado;
   }
-  return resultado;
-}
 }

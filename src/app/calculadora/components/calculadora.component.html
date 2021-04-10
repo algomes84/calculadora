@@ -8,6 +8,7 @@
               <div class="col-xs-3">
                 <button 
                   type="button" 
+                  (click)="limpar()"
                   class="btn btn-danger kz-btn">C
                 </button>
               </div>
@@ -50,6 +51,7 @@
                 <button 
                   type="button" 
                   class="btn btn-warning kz-btn" 
+                  (click)="definirOperacao('/')"
                   id="btnDivisao">/
                 </button>
               </div>
@@ -83,6 +85,7 @@
                 <button 
                   type="button" 
                   class="btn btn-warning kz-btn"  
+                  (click)="definirOperacao('*')"
                   id="btnMIltiplicacao">*
                 </button>
               </div>
@@ -116,6 +119,7 @@
                 <button 
                   type="button" 
                   class="btn btn-warning kz-btn" 
+                  (click)="definirOperacao('-')"
                   id="btnSubtracao">-
                 </button>
               </div>
@@ -125,6 +129,7 @@
                 <button 
                   type="button" 
                   class="btn btn-default kz-btn" 
+                  (click)="adicionarNumero('0')" 
                   id="btn0">0
                 </button>
               </div>
@@ -132,6 +137,7 @@
                 <button 
                   type="button" 
                   class="btn btn-default kz-btn" 
+                  (click)="adicionarNumero('.')"
                   id="btnDecimal">.
                 </button>
               </div>
@@ -139,6 +145,7 @@
                 <button 
                   type="button" 
                   class="btn btn-success kz-btn" 
+                  (click)="calcular()"
                   id="btnCalcular">=
                 </button>
               </div>
@@ -146,6 +153,7 @@
                 <button 
                   type="button" 
                   class="btn btn-warning kz-btn" 
+                  (click)="definirOperacao('+')"
                   id="btnSoma">+
                 </button>
               </div>
